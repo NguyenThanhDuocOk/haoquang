@@ -44,7 +44,5 @@ git clone https://github.com/NguyenThanhDuocOk/haoquang.git
 ```
 
 ## 📸 Hình ảnh Minh họa (Screenshots)
-*(Chèn ảnh giao diện trang chủ, trang quản lý và ERD Database tại đây)*
-
 ---
 *Được phát triển bởi Nguyễn Thành Được - Thích tối ưu trải nghiệm và phân tích dữ liệu.*
