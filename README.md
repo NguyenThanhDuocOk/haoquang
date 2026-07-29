@@ -1,53 +1,50 @@
 <div align="center">
-  <h1>🤖 Smart Advisory Chatbot</h1>
-  <p>Hệ thống hội thoại thông minh tích hợp LLM & RAG với kiến trúc Microservices</p>
+  <h1>✨ Website Chuỗi Hào Quang</h1>
+  <p>Giải pháp toàn diện về Kiến trúc Database và UI/UX Frontend</p>
 
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" />
-  <img src="https://img.shields.io/badge/OpenAI_LLM-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </div>
 
 <br/>
 
 ## 🎯 Tổng quan (Overview)
-Dự án **Chatbot Tư vấn Thông minh** được phát triển nhằm mục đích cung cấp giải pháp hỗ trợ giải đáp thắc mắc và tư vấn khách hàng tự động, liên tục 24/7. Thay vì sử dụng kịch bản cứng nhắc (Rule-based), hệ thống được ứng dụng công nghệ **Generative AI** kết hợp với kiến trúc **RAG (Retrieval-Augmented Generation)** để đảm bảo chatbot không bị ảo giác (hallucination) và luôn trả lời dựa trên kho dữ liệu tri thức nội bộ chuẩn xác nhất.
+**Website chuỗi Hào Quang** là dự án xây dựng hệ thống nền tảng Web từ đầu, tập trung vào hai mảng cốt lõi: tối ưu hóa cơ sở dữ liệu để đáp ứng khối lượng dữ liệu kinh doanh của một chuỗi hệ thống, và thiết kế giao diện UI/UX mượt mà, chuyên nghiệp mang đến trải nghiệm người dùng hoàn hảo.
 
-## 🏗️ Kiến trúc Hệ thống (Architecture)
-Hệ thống được thiết kế theo chuẩn **Microservices**, cho phép dễ dàng mở rộng (scale) và bảo trì độc lập:
+## 🏗️ Kiến trúc & Công nghệ (Architecture & Tech Stack)
+Dự án được xây dựng dựa trên mô hình Client-Server với stack truyền thống nhưng được tối ưu hóa cực kỳ chặt chẽ:
 
-1. **API Gateway & Routing (FastAPI):** Tiếp nhận luồng tin nhắn đầu vào, xử lý hàng đợi và phân luồng.
-2. **LLM Engine:** Tích hợp mô hình ngôn ngữ lớn (OpenAI / Claude) để phân tích ý định (Intent Recognition) và sinh câu trả lời tự nhiên.
-3. **Knowledge Base (Vector Database):** Sử dụng cơ sở dữ liệu Vector (như ChromaDB/Pinecone) để thực hiện quy trình nhúng (Embedding) tài liệu và truy xuất (Retrieve) thông tin bối cảnh.
-4. **Memory Management:** Quản lý bối cảnh đoạn hội thoại (Conversation History) để chatbot có khả năng "nhớ" ngữ cảnh trò chuyện với người dùng.
+- **Frontend (UI/UX):** Xây dựng bộ giao diện thân thiện, chuẩn Responsive trên mọi thiết bị bằng HTML5, CSS3 và JavaScript. Tập trung vào vi-tương tác (micro-interactions) để tạo cảm giác "mướt" khi thao tác.
+- **Backend (Logic):** Xử lý luồng dữ liệu bảo mật và hiệu quả bằng **PHP**.
+- **Database (Data Layer):** Thiết kế sơ đồ quan hệ thực thể (ERD) bằng **MySQL**. Hệ thống Database được chuẩn hóa (Normalization) để chống dư thừa dữ liệu và đánh index (Indexing) các trường tìm kiếm nhằm đẩy nhanh tốc độ truy vấn.
 
 ## ✨ Tính năng Nổi bật (Key Features)
-- Trả lời ngôn ngữ tự nhiên cực kỳ mượt mà, hiểu thấu đáo ý định người dùng (NLU).
-- **Zero-Hallucination:** Nhờ RAG, chatbot chỉ sinh câu trả lời dựa trên tài liệu đã cung cấp.
-- Kiến trúc API tối ưu hóa bằng `asyncio`, tốc độ phản hồi cực nhanh dưới 2s.
-- Hỗ trợ triển khai nhanh chóng qua **Docker**.
+- **Tối ưu hóa Truy vấn:** Cấu trúc Database có khả năng mở rộng (Scalable), cho phép quản lý hàng ngàn bản ghi sản phẩm/dịch vụ mà không làm chậm hệ thống.
+- **UI/UX Năng động:** Bố cục layout thiết kế hiện đại, làm nổi bật thông điệp thương hiệu "Hào Quang". Hiệu ứng chuyển động mượt mà không làm giảm tốc độ tải trang.
+- **Bảo mật Cơ bản:** Chống SQL Injection bằng Prepared Statements, xác thực an toàn thông qua Session/Cookies.
 
 ## 🚀 Hướng dẫn Cài đặt (Setup Instructions)
 
 ```bash
-# 1. Clone dự án
-git clone https://github.com/NguyenThanhDuocOk/chatbot.git
-cd chatbot
+# 1. Clone mã nguồn
+git clone https://github.com/NguyenThanhDuocOk/haoquang.git
 
-# 2. Cài đặt các thư viện cần thiết
-pip install -r requirements.txt
+# 2. Setup môi trường Web Server
+# (Yêu cầu XAMPP, WAMP, hoặc Docker có sẵn PHP & MySQL)
+# Đưa thư mục code vào /htdocs (nếu dùng XAMPP)
 
-# 3. Cấu hình biến môi trường
-cp .env.example .env
-# Nhập API Key (OpenAI API, VectorDB, v.v...) vào file .env
+# 3. Import Database
+# Mở phpMyAdmin hoặc command line MySQL, import file `database/haoquang_db.sql`
 
-# 4. Khởi động server (Mặc định: cổng 8000)
-uvicorn main:app --reload
+# 4. Cấu hình kết nối
+# Mở file `config/database.php` và nhập thông tin user/password MySQL của bạn.
 ```
 
-## 📈 Định hướng Tương lai
-- Tích hợp thêm Voice-to-Text để tư vấn bằng giọng nói.
-- Phân tích cảm xúc khách hàng (Sentiment Analysis) để chuyển tiếp cho nhân viên tư vấn con người khi cần.
+## 📸 Hình ảnh Minh họa (Screenshots)
+*(Chèn ảnh giao diện trang chủ, trang quản lý và ERD Database tại đây)*
 
 ---
-*Được phát triển bởi Nguyễn Thành Được - Mobile Game Playtester & AI Enthusiast.*
+*Được phát triển bởi Nguyễn Thành Được - Thích tối ưu trải nghiệm và phân tích dữ liệu.*
